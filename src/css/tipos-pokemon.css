@@ -1,0 +1,22 @@
+.tipo {
+  padding: 8px;
+  border-radius: 10px;
+}
+.grama {
+  background-color: var(--grama);
+}
+.veneno {
+  background-color: var(--veneno);
+}
+.fogo {
+  background-color: var(--fogo);
+}
+.voador {
+  background-color: var(--voador);
+}
+.agua {
+  background-color: var(--agua);
+}
+.inseto {
+  background-color: var(--inseto);
+}

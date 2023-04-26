@@ -1,0 +1,30 @@
+:root {
+  --cor-fundo: #5e5b5bad;
+  --cor-texto: #333333;
+  --cor-fundo-cartao: #d8e3ec;
+  /* tipo de pokemon */
+  --normal: #a8a77a;
+  --fogo: #ee8130;
+  --agua: #6390f0;
+  --eletrico: #f7d02c;
+  --grama: #7ac74c;
+  --gelo: #96d9d6;
+  --lutando: #c22e28;
+  --veneno: #a33ea1;
+  --terra: #e2bf65;
+  --voador: #a98ff3;
+  --psiquico: #f95587;
+  --inseto: #a6b91a;
+  --rock: #b6a136;
+  --fantasma: #735797;
+  --dragao: #6f35fc;
+  --escuro: #705746;
+  --aco: #b7b7ce;
+  --fada: #d685ad;
+}
+
+body.modo-escuro {
+  --cor-fundo: #212121;
+  --cor-texto: #f5f5f5;
+  --cor-fundo-cartao: #a8a8a8;
+}
