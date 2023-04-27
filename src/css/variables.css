@@ -2,6 +2,7 @@
   --cor-fundo: #5e5b5bad;
   --cor-texto: #333333;
   --cor-fundo-cartao: #d8e3ec;
+  --cor-fundo-cartao-hover: #96d9d6;
   /* tipo de pokemon */
   --normal: #a8a77a;
   --fogo: #ee8130;
@@ -27,4 +28,5 @@ body.modo-escuro {
   --cor-fundo: #212121;
   --cor-texto: #f5f5f5;
   --cor-fundo-cartao: #a8a8a8;
+  --cor-fundo-cartao-hover: #8a2be2;
 }

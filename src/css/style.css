@@ -10,7 +10,6 @@ header {
   padding: 25px;
   display: flex;
   justify-content: space-between;
-  /* color: var(--cor-texto); */
 }
 
 header img {
@@ -28,16 +27,11 @@ main {
 }
 
 .listagem-pokemon {
-  /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
   gap: 30px;
   margin-top: 15px;
-
-  /*com grid */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* place-items: center; */
+  place-items: center;
 }
 
 .cartao-pokemon {
@@ -49,19 +43,25 @@ main {
   border-radius: 15px;
   background-color: var(--cor-fundo-cartao);
   width: 200px;
+  transition: 0.2s ease-in-out;
 }
 
 header .logo:hover,
 header #botao-alterar-tema img:hover,
 .cartao-pokemon:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  cursor: pointer; 
+}
+
+.cartao-pokemon:hover{
+  background-color: var(--cor-fundo-cartao-hover);
 }
 
 .cartao-pokemon .informacoes {
   display: flex;
   justify-content: space-between;
 }
+
 .cartao-pokemon .informacoes {
   border: 1px solid var(--cor-texto);
   border-radius: 10px;
@@ -74,7 +74,7 @@ header #botao-alterar-tema img:hover,
   border-radius: 10px;
 }
 
-.cartao-pokemon .tipo-pokemon {
+.cartao-pokemon .tipos {
   display: flex;
   gap: 15px;
 }
@@ -83,9 +83,10 @@ header #botao-alterar-tema img:hover,
   max-height: 80px;
   overflow-y: scroll;
   padding-right: 10px;
+  font-size: 12px;
 }
 
-.cartao-pokemon .gif-pokemon {
+.cartao-pokemon .gif {
   width: 90px;
   height: 90px;
 }
