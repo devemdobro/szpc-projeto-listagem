@@ -1,49 +1,25 @@
 body {
+	font-family: 'Poppins', sans-serif;		
   max-width: 1280px;
   margin: 0 auto;
-  background: var(--cor-fundo);
-  color: var(--cor-texto);
-  font-family: "Poppins", sans-serif;
+  background-color: #5e5b5bad;
+  color: #333333;
 }
 
 header {
-  padding: 25px;
   display: flex;
   justify-content: space-between;
+  padding: 25px;
 }
 
 header img {
-  max-width: 30px;
+  width: 30px;
 }
 
 header #botao-alterar-tema {
+  background: none;
   border: none;
   cursor: pointer;
-  background: none;
-}
-
-main {
-  padding: 25px;
-}
-
-.listagem-pokemon {
-  gap: 30px;
-  margin-top: 15px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  place-items: center;
-}
-
-.cartao-pokemon {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 15px;
-  align-items: center;
-  border-radius: 15px;
-  background-color: var(--cor-fundo-cartao);
-  width: 200px;
-  transition: 0.2s ease-in-out;
 }
 
 header .logo:hover,
@@ -53,37 +29,77 @@ header #botao-alterar-tema img:hover,
   cursor: pointer; 
 }
 
+main {
+  padding: 25px;
+}
+
+.listagem-pokemon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.cartao-pokemon {
+  background-color: #d8e3ec;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  width: 200px;
+}
+
 .cartao-pokemon:hover{
-  background-color: var(--cor-fundo-cartao-hover);
+  background-color: #96d9d6;
 }
 
 .cartao-pokemon .informacoes {
   display: flex;
   justify-content: space-between;
-}
-
-.cartao-pokemon .informacoes {
-  border: 1px solid var(--cor-texto);
+  border: 1px solid #333333;
   border-radius: 10px;
 }
 
 .cartao-pokemon .informacoes span {
+  padding: 5px;
   font-size: 17px;
   text-transform: uppercase;
   padding: 5px;
-  border-radius: 10px;
-}
+} 
 
 .cartao-pokemon .tipos {
   display: flex;
   gap: 15px;
 }
 
+.tipo {
+  padding: 8px;
+  border-radius: 10px;
+}
+.grama {
+  background-color: #7ac74c;
+}
+.veneno {
+  background-color: #df67ddfb;
+}
+.fogo {
+  background-color: #ee8130;
+}
+.agua {
+  background-color: #6390f0;
+}
+.inseto {
+  background-color: #a6b91a;
+}
+
 .descricao {
   max-height: 80px;
   overflow-y: scroll;
+  font-size: 14px;
   padding-right: 10px;
-  font-size: 12px;
 }
 
 .cartao-pokemon .gif {
