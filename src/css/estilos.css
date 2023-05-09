@@ -16,17 +16,15 @@ header img {
   width: 30px;
 }
 
+header img:hover, .cartao-pokemon:hover {
+  transform: scale(1.05);
+  cursor: pointer; 
+}
+
 header #botao-alterar-tema {
   background: none;
   border: none;
   cursor: pointer;
-}
-
-header .logo:hover,
-header #botao-alterar-tema img:hover,
-.cartao-pokemon:hover {
-  transform: scale(1.05);
-  cursor: pointer; 
 }
 
 main {
@@ -49,11 +47,22 @@ main {
   flex-direction: column;
   gap: 15px;
   border-radius: 15px;
-  width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+header .logo:hover,
+header #botao-alterar-tema img:hover,
+.cartao-pokemon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .cartao-pokemon:hover{
   background-color: #96d9d6;
+}
+
+.cartao-pokemon .informacoes span {
+  padding: 5px;
 }
 
 .cartao-pokemon .informacoes {
@@ -63,34 +72,43 @@ main {
   border-radius: 10px;
 }
 
+.cartao-pokemon .gif {
+  width: 90px;
+  height: 90px;
+}
+
 .cartao-pokemon .informacoes span {
   padding: 5px;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 5px;
-} 
+}
 
 .cartao-pokemon .tipos {
   display: flex;
   gap: 15px;
 }
 
-.tipo {
+.cartao-pokemon .tipo {
   padding: 8px;
   border-radius: 10px;
 }
+
 .grama {
   background-color: #7ac74c;
 }
+
 .veneno {
   background-color: #df67ddfb;
 }
+
 .fogo {
   background-color: #ee8130;
 }
+
 .agua {
   background-color: #6390f0;
 }
+
 .inseto {
   background-color: #a6b91a;
 }
@@ -100,9 +118,4 @@ main {
   overflow-y: scroll;
   font-size: 14px;
   padding-right: 10px;
-}
-
-.cartao-pokemon .gif {
-  width: 90px;
-  height: 90px;
 }
