@@ -6,6 +6,11 @@ body {
   color: #333333;
 }
 
+body.modo-escuro {
+  background-color: #212121;
+  color: #f5f5f5;
+}  
+
 header {
   display: flex;
   justify-content: space-between;
@@ -50,11 +55,14 @@ main {
   transition: 0.2s ease-in-out;
 }
 
-header .logo:hover,
-header #botao-alterar-tema img:hover,
+.modo-escuro .cartao-pokemon { 
+  background-color: #a8a8a8;
+}
+
+header img:hover,
 .cartao-pokemon:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .cartao-pokemon:hover{
